@@ -199,3 +199,7 @@
                     width: 100%;
                     height: auto;
                 }
+                
+                .section-features {
+                    padding-bottom: 50px;
+                }
