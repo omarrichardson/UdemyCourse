@@ -25,15 +25,71 @@
                     margin: 0px auto;
                 }
                 
-                h1 {
-                    margin: 0;
-                    color: #fff;
-                    font-size: 220%;
+                .section {
+                    padding: 80px 0px;
+                }
+                
+                .box {
+                    padding: 1%;
+                }
+                /* HEADINGS */
+                
+                h1,
+                h2 {
                     font-weight: 200;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    word-spacing: 4px;
+                }
+                
+                h1 {
+                    margin-top: 0;
                     margin-bottom: 10px;
+                    font-size: 220%;
+                    color: #fff;
+                    word-spacing: 4px;
+                }
+                
+                h2 {
+                    font-size: 180%;
+                    word-spacing: 2px;
+                    text-align: center;
+                    margin: 50px 0 20px 0;
+                }
+                
+                h2:after {
+                    display: block;
+                    height: 2px;
+                    background-color: #e67e22;
+                    content: "";
+                    width: 100px;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+                
+                h3 {
+                    font-size: 100%;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                }
+                /* ----- PARAGRAPHS ---- */
+                
+                .long-copy {
+                    line-height: 145%;
+                    width: 70%;
+                    margin-left: 15%;
+                }
+                
+                .box p {
+                    font-size: 90%;
+                }
+                /* ----- ICONS ---- */
+                
+                .icon-big {
+                    font-size: 275%;
+                    color: #e67e22;
+                    margin-bottom: 8px;
+                    text-align: center;
+                    padding-left: 25%;
                 }
                 /* ----- BUTTONS ---- */
                 
@@ -84,4 +140,62 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                }
+                
+                .logo {
+                    height: 100px;
+                    width: auto;
+                    float: left;
+                }
+                
+                .main-nav {
+                    float: right;
+                }
+                
+                .main-nav li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: 40px;
+                    margin-top: 55px;
+                }
+                
+                .main-nav li a:link,
+                .main-nav li a:visited {
+                    padding: 7px 0px;
+                    color: #fff;
+                    font-weight: 100;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 85%;
+                    border-bottom: 2px solid #e67e22 transparent;
+                    transition: border-bottom 0.2s;
+                }
+                
+                .main-nav li a:hover,
+                .main-nav li a:active {
+                    border-bottom: 2px solid #e67e22;
+                }
+                /* --------------------------------------- */
+                /* MEALS*/
+                /* --------------------------------------- */
+                
+                .meals-showcase figure {
+                    list-style: none;
+                    width: 100%;
+                }
+                
+                .meals-showcase li {
+                    display: block;
+                    float: left;
+                    width: 25%;
+                }
+                
+                .meal-photo {
+                    width: 100%;
+                    margin: 0;
+                }
+                
+                .meal-photo img {
+                    width: 100%;
+                    height: auto;
                 }
