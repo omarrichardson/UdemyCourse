@@ -103,6 +103,22 @@
                     text-align: center;
                     padding-left: 25%;
                 }
+                /* ----- LINKS ---- */
+                
+                a:link,
+                a:visited {
+                    color: #e67e22;
+                    text-decoration: none;
+                    padding-bottom: 1px;
+                    border-bottom: 1px solid #e67e22;
+                }
+                
+                a:hover,
+                a:active {
+                    color: #555;
+                    transition: border-bottom 0.2s color 0.2s;
+                    border-bottom: 1px solid transparent;
+                }
                 /* ----- BUTTONS ---- */
                 
                 .btn:link,
@@ -279,8 +295,48 @@
                     font-size: 150%;
                 }
                 
+                .btn-app:link,
+                .btn-app:visited {
+                    border: 0;
+                }
+                
                 .btn-app img {
                     height: 40px;
                     width: auto;
+                    margin-right: 10px;
+                }
+                /* --------------------------------------- */
+                /* CITIES*/
+                /* --------------------------------------- */
+                
+                .city-image {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                    opacity: 0.7;
+                    filter: blur(.87px);
+                    filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='3');
+                    transition: 1s;
+                }
+                
+                .city-image:hover {
+                    filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='0');
+                    filter: blur(0px);
+                }
+                
+                .city-feature {
+                    margin-bottom: 4px;
+                }
+                
+                .city-feature i {
+                    display: inline-block;
+                    width: 30px;
+                    text-align: center;
+                    color: #e67e22;
+                    font-size: 150%;
+                    /* secret to aligning icons and text */
+                    line-height: 120%;
+                    vertical-align: middle;
+                    margin-top: -5px;
                     margin-right: 10px;
                 }
