@@ -16,6 +16,18 @@
                     font-weight: 300;
                     text-rendering: optimizeLegibility;
                 }
+                
+                .clearfix {
+                    zoom: 1
+                }
+                
+                .clearfix:after {
+                    content: '.';
+                    clear: both;
+                    display: block;
+                    height: 0;
+                    visibility: hidden;
+                }
                 /* --------------------------------------- */
                 /* REUSABLE COMPONENTS */
                 /* --------------------------------------- */
@@ -224,36 +236,47 @@
                 /* HOW IT WORKS*/
                 /* --------------------------------------- */
                 
-                .steps-box {
-                    margin-top: 30px;
-                }
-                
                 .steps-box:first-child {
                     text-align: right;
                     padding-right: 3%;
+                    margin-top: 30px;
                 }
                 
                 .steps-box:last-child {
                     padding-right: 3%;
+                    margin-top: 70px;
                 }
                 
                 .app-screen {
                     width: 40%;
+                    margin-bottom: 90px;
+                    /* margin-top: -20px; */
                 }
                 
                 .works-step {
                     margin-bottom: 50px;
                 }
                 
+                .works-step:last-of-type {
+                    margin-bottom: 80px;
+                }
+                
                 .works-step div {
                     color: #e67e22;
                     border: 2px solid #e67e22;
                     border-radius: 50%;
-                    /* display: inline-block; */
-                    float: left;
+                    display: inline-block;
                     height: 45px;
                     width: 45px;
                     text-align: center;
                     padding: 5px;
+                    float: left;
+                    margin-right: 25px;
+                    font-size: 150%;
+                }
+                
+                .btn-app img {
+                    height: 40px;
+                    width: auto;
                     margin-right: 10px;
                 }
